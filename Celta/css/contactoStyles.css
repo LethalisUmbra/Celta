@@ -1,0 +1,47 @@
+/* Hoja de estilo en cascada para home.html */
+
+/* Especificación de filas y areas */
+.container{
+  grid-template-rows  : repeat(2, auto);
+  grid-template-areas : "content content content"
+                        "footer footer footer";
+}
+.content{
+	font-size: 1.5em;
+}
+.red-social{
+  overflow            : hidden;
+  width               : 75%;
+  margin-left         : auto;
+  margin-right        : auto;
+  float 				      : left;
+}
+.red-social img{
+	height              : 50px;
+	width               : 50px;
+	float               : left;
+}
+.social-text{
+  color               : #fff;
+  float               : left;
+  font-size           : 17px;
+  font-weight 		    : bold;
+  margin-left 	      : 3%;
+  margin-top 	 		    : 1.33em;
+  margin-bottom  		  : 1.33em;
+}
+
+.red-social a{
+  text-decoration: underline;
+}
+
+/* [Responsive] */
+@media screen and (max-width: 768px){
+  .red-social img{
+    height: 35px;
+    width: 35px;
+  }
+  .social-text{
+    font-size: 12px;
+  }
+}

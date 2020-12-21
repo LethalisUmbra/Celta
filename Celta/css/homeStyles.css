@@ -1,0 +1,24 @@
+/* Hoja de estilo en cascada para home.html */
+
+/* Especificación de filas y areas */
+.container{
+  grid-template-rows  : repeat(3, auto);
+  grid-template-areas : "carousel carousel carousel"
+                        "content content content"
+                        "footer footer footer";
+}
+/* [Estilización de los componentes del carrusel] */
+.carousel{
+  padding             : 0px 20px 20px 20px;
+  border-radius       : 10px;
+  grid-area           : carousel;
+  background          : rgba(0,0,0,0.8);
+  margin-top 		      : 5%;
+}
+
+.carousel p{
+	text-align 		      : center;
+	font-size 		      : 1.5em;
+	color 			        : #fff;
+	font-weight 	      : bold;
+}
